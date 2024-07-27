@@ -97,7 +97,7 @@ function UpdateTodo() {
               fullWidth
               id="phone"
               label="Phone"
-              type="number"
+              type="text"
               placeholder="Enter Phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}

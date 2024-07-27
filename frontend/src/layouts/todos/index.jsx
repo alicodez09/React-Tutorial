@@ -12,7 +12,6 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Typography,
 } from "@mui/material";
 
 function Index() {
@@ -44,20 +43,19 @@ function Index() {
 
   return (
     <Container>
-        <Button variant="contained" color="primary" component={Link} to="/create-todo" mt={5}>
+        <Button variant="contained" color="primary" component={Link} to="/create-todo" style={{marginTop:"3rem"}}>
           Create
         </Button>
       <Box mt={5} display="flex" flexDirection="column" alignItems="center">
         <TableContainer component={Paper} mt={2}>
           <Table>
-            <TableHead>
+            <TableHead style={{background:"#1565C0",color:"white"}}>
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Email</TableCell>
-                <TableCell>Age</TableCell>
-                <TableCell>Phone</TableCell>
-
-                <TableCell>Action</TableCell>
+                <TableCell style={{color:"white"}}>Name</TableCell>
+                <TableCell style={{color:"white"}}>Email</TableCell>
+                <TableCell style={{color:"white"}}>Age</TableCell>
+                <TableCell style={{color:"white"}}>Phone</TableCell>
+                <TableCell style={{color:"white"}}>Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
